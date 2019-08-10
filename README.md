@@ -148,6 +148,8 @@ mgd = Mgekdown()
 
 `mgd.title(txt)` 对md格式文本处理，提取标题
 
+`mgd.date(txt)` 对md格式文本处理，提取时间(默认只提取年月日)
+
 `mgd.abstract(txt)` 对md格式文本处理，获取文章摘要
 
 #### 扩展

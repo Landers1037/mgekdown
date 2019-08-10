@@ -31,6 +31,10 @@ class Mgekdown():
 
         return title.group(1)
 
+    def date(self,content):
+        date = re.search(r'date: (.*) ', content, re.M | re.I)
+        return date.group(1)
+		
     def content(self,txt):
         # 读取文章内容
         post = re.sub(r'---\n.*---', "", txt, 0, re.M | re.S)
