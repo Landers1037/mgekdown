@@ -43,8 +43,8 @@ class Mgekdown():
 
     def abstract(self,txt):
         # 摘要文字
-        txt = self.content(txt)
-        abstract = re.search(r'(.*)<!--more-->',txt,re.M|re.S|re.I).group(1)
+        con = self.content(txt)
+        abstract = re.search(r'(.*)<!--more-->',con,re.M|re.S|re.I).group(1)
 
         return abstract
 
