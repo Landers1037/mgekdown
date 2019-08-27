@@ -37,7 +37,7 @@ class Mgekdown():
 		
     def content(self,txt):
         # 读取文章内容
-        post = re.sub(r'---\n.*---', "", txt, 0, re.M | re.S)
+        post = re.sub(r'^---\n.*^---$', "", txt, 0, re.M | re.S)
 
         return post
 
